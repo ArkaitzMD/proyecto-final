@@ -18,7 +18,7 @@ Se trata de un proyecto Big Data completo, donde se analizan tweets en tiempo re
 ### El proyecto tiene la siguiente estructura:
 * Mediante la API de Twitter se establece un streaming de tweets con Nifi.
 * Se cargan lo tweets desde Nifi a Kafka.
-* Mediante Spark Streamin se establece un streaming de tweets con Kafka.
+* Mediante Spark Streaming se establece un streaming de tweets con Kafka.
 * Se hace una predicción mediante un algortimo Naive Bayes Classifier que clasifica los tweets (queja, no_queja).
 * Los tweets clasificados se cargan en Kafka mediante un Producer en PySpark.
 * Con Nifi se cargan los tweets clasificados desde Kafka a MongoDB.
